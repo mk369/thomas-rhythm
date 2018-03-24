@@ -1,0 +1,229 @@
+/* ===== Reset start ===== */
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	background-color: #fff;
+	color: #777;
+	font: 300 15px/1 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	font-weight: normal;
+}
+p {
+	margin: 0;
+}
+a{
+	color: inherit;
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-decoration: none;
+}
+ul, ol{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+img {
+	max-width: 100%;
+}
+button {
+	outline: none;
+	border: none;
+	cursor: pointer;
+}
+blockquote {
+	margin: 0;
+}
+/* ===== Reset end ===== */
+/* ===== Default classes start */
+/* 
+	text color, text align, float, backgrounds colors, text transform
+*/
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-justify {
+	text-align: justify;
+}
+
+.bg-black {
+	background-color: #111;
+}
+
+.bg-grey {
+	background-color: #f8f8f8;
+}
+
+/* ===== Default classes end */
+/* ===== Default component start ===== */
+/* 
+	Buttons, text, title, section, small-section header, footer,
+	form elements, icons, tabs, blockquote, container 
+*/
+.default-section {
+	padding: 135px 0;
+}
+
+.small-section {
+	padding: 70px 0;
+}
+
+.container {
+	max-width: 1200px; /* 1200 - 30 = 1170 */
+	padding: 0 15px;
+	margin: auto;
+}
+
+.container-fluid {
+	padding: 0 15px;
+}
+
+.title {
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+	color: #111;
+}
+.title.title-white {
+	color: #fff;
+}
+.title.section-title {
+	font-size: 18px;
+	letter-spacing: .5em; /* 0.5em = .5em */
+	margin-bottom: 75px;
+	font-weight: 400;
+}
+.title.section-title-light {
+	font-size: 18px;
+	letter-spacing: .3em;
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.default-text {
+	font-size: 15px;
+	line-height: 1.7333;
+	font-weight: 300;
+}
+
+blockquote, 
+.blockquote {
+	font-size: 24px;
+	font-weight: 300;
+	line-height: 1.6;
+}
+blockquote span, 
+.blockquote span {
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 20px;
+	border-radius: 2px;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-family: 'Open Sans';
+}
+
+.btn.btn-default {
+	background-color: #e5e5e5;
+	color: #777;
+}
+
+.btn.btn-default:hover {
+	background-color: #d1d0d0;
+}
+
+.btn.btn-black {
+	background-color: #323232;
+	color: #fff;
+}
+
+.btn.btn-black:hover {
+	background-color: #000;
+}
+
+.btn.btn-xs {
+	padding: 7px 15px;
+	font-size: 11px;
+}
+
+.header{
+	position: fixed;
+	overflow: hidden;
+	width: 100%;
+	top: 0;
+	z-index: 99;
+	padding: 25px 0;
+}
+.header .logo{
+	float: left;
+}
+
+.header .header-nav{
+	float: right;
+}
+
+.header .header-nav li{
+	float: left;
+	line-height: 21px;
+	color:rgba(255, 255, 255, 0.75);
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: .3em;
+	font-weight: 400;
+	opacity: .75;	
+}
+
+.header .header-nav li + li{
+	margin-left: 35px;
+}
+/* ===== Default component end ===== */
+/* ===== Custom styles start ===== */
+h1.first-screen{
+	font-style: 30px;
+	color: rgba(255, 255, 255, .9);
+	letter-spacing: 1.7em;
+	font-family: 'Dosis', sans-serif;
+	text-transform: uppercase;
+}
+
+h6.first-screen{
+	margin-top: 100px;
+	font-size: 19px;
+	color: rgba(255, 255, 255, .68);
+}
+
+.inner{
+	background: url('../img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	text-align: center;
+	padding-top: 73px;
+}
+
+.inner-content{
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* ===== Custom styles end ===== */
+
+
