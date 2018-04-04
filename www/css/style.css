@@ -242,6 +242,10 @@ h6.first-screen{
 /* ----- Inner end */
 
 /* ----- About studio ----- */
+.about-studio .col-text{
+	line-height: 26px;
+}
+
 .team-item .team-item-info{
 	text-align: center;
 	padding: 15px 0;
@@ -252,7 +256,8 @@ h6.first-screen{
 	text-transform: uppercase;
 	margin-top: 15px;
 	font-family: 'Dosis', sans-serif;
-	letter-spacing: .4em;
+	letter-spacing: 0.4em;
+	font-weight: 400;
 }
 
 .team-item .team-item-info span.team-item-name{
