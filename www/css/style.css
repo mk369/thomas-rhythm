@@ -277,8 +277,42 @@ h6.first-screen{
 .team-item .team-item-img:hover .team-item-skills{
 	opacity: 1;
 }
-
 /* ----- About studio end ----- */
+
+/* ----- Why choose us ----- */
+.why-choose-us .title.title-section{
+	font-size: 18px;
+	letter-spacing: 0.5em;
+	margin-bottom: 3px;
+}
+
+.advantages-wrapper{
+	padding: 7px 0;
+}
+.advantages-wrapper .row{
+	margin-top: 86px;
+}
+
+.advantage-item span{
+	display: block;
+	text-align: center;
+	margin-bottom: 35px;
+}
+.advantage-item span.advantage-icon{
+	font-size: 48px;
+}
+.advantage-item span.advantage-title{
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	font-weight: 400;
+	font-family: 'Dosis', sans-serif;
+}
+.advantage-item .advantage-description{
+	line-height: 26px;
+	font-size: 14px;
+}
+/* ----- Why choose us end ----- */
 /* ===== Custom styles end ===== */
 
 
