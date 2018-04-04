@@ -161,7 +161,7 @@ blockquote span,
 }
 
 .header{
-	position: fixed;
+	position: absolute;
 	overflow: hidden;
 	width: 100%;
 	top: 0;
@@ -313,6 +313,62 @@ h6.first-screen{
 	font-size: 14px;
 }
 /* ----- Why choose us end ----- */
+
+/* ----- Latest news ----- */
+.latest-news .latest-news-title{
+	width: 100%;
+	position: relative;
+
+} 
+.latest-news .latest-news-title .blog-link{
+	position: absolute;
+	display: inline-block;
+	right:0;
+	font-size: 11px;
+	color: #999;
+	letter-spacing: 0.4em;
+	line-height: 18px;
+}
+.latest-news-wrapper{
+	padding: 6px 0;
+}
+
+.latest-news-item .latest-news-description{
+	margin-top: 30px;
+}
+
+.latest-news-item .latest-news-img{
+	filter: grayscale(100%);
+	transition: filter .2s linear;
+}
+.latest-news-item:hover .latest-news-img{
+	filter: grayscale(0%);
+}
+
+.latest-news-item .latest-news-description .post-title{
+	font-weight: 400;
+	letter-spacing: 0.2em;
+}
+
+.latest-news-item .latest-news-description .post-author{
+	font-size: 11px;
+	letter-spacing: 0.4em;
+	font-weight: 400;
+	color: #999;
+	margin-top: 17px; 
+}
+
+.latest-news-item .latest-news-description .post-short-text{
+	line-height: 26px;
+	margin: 27px 0; 
+}
+
+.latest-news-item .latest-news-description .btn-news-read-nore{
+	letter-spacing: 0.2em;
+}
+
+/* ----- Latest news end ----- */
+
 /* ===== Custom styles end ===== */
 
 
