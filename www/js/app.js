@@ -1,7 +1,6 @@
 (function (){  
 // init tabs
     function initTabs(){
-        log("initTabs");
         $('#tabs').tabs({
             hide: {
                 effect: "fade",
