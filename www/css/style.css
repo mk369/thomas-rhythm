@@ -731,11 +731,11 @@ h6.first-screen{
 	color: #444;
 	margin-top: 6px;
 }
-.contact-form{
+.contact-form .form-row{ 
 	margin: 0 -5px;
 	overflow: hidden;
 }
-.contact-form .form-col{
+.contact-form .form-row .form-col{
 	float: left;
 	width: 50%;
 	padding: 0 5px;
@@ -745,10 +745,11 @@ h6.first-screen{
 }
 .contact-form .form-info{
 	line-height: 40px;
-	margin-left: 5px;
 }
-.contact-form button{
-	margin-right: 5px;
+
+.contact-form .form-submit{
+	overflow: hidden;
+	margin-top: 20px;
 }
 /* ----- CONTACT END */
 /* ----- MAP START ----- */
