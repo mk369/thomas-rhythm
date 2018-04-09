@@ -54,6 +54,7 @@ input[type="submit"]{
 blockquote {
 	margin: 0;
 }
+
 /* ===== Reset end ===== */
 /* ===== Default classes start */
 /* 
@@ -140,6 +141,11 @@ blockquote span,
 	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: .2em;
+}
+@media(max-width: 991px){
+	blockquote{
+		margin-bottom: 20px;
+	}
 }
 .btn {
 	display: inline-block;
@@ -324,13 +330,22 @@ h6.first-screen{
 	margin-top: 100px;
 	opacity: 0.68;
 }
+@media(max-width: 991px){
+	.inner .inner-content h1{
+		letter-spacing: .7em;
+		text-indent: .7em;
+	}
+	.inner .inner-content span{
+		margin-top: 50px;
+	}	
+}
 /* ----- Inner end */
 
 /* ----- About studio ----- */
 .about-studio{
 	border-bottom: 1px solid rgba(0,0,0,.08);
 }
-.about-studio .col-text{
+.about-studio p.col-text{
 	line-height: 1.7333;
 }
 .team-wrapper{
@@ -384,14 +399,12 @@ h6.first-screen{
 	line-height: 2.1111;
 }
 .team-item .team-item-skills p{
-	margin-top: 14px;
+	margin: 15px 0 30px;
 	font-size: 13px;
 	color: rgba(255,255,255,.50);
-	line-height: 1.6153;
+	line-height: 1.6;
 }
-.team-item .team-item-skills p + div{
-	margin-top: 30px;
-}
+
 .skill-item span{
 	font-size: 11px;
 	text-transform: uppercase;
@@ -411,15 +424,33 @@ h6.first-screen{
 	transition: width .5s ease-out;
 	width: 0%;
 }
+@media(max-width: 991px){
+	.team-item .team-item-skills{
+		padding: 10px 15px;
+	}
+	.team-item .team-item-skills::before{
+		line-height: 1;
+	}
+	.team-item .team-item-skills p{
+		margin: 5px 0;
+	}
+	.skill-item span{
+		line-height: 2.4;
+	}
+	.team-item .team-item-info{
+		padding: 10px 0;
+	}
+}
 /* ----- About studio end ----- */
 
 /* ----- Services ----- */
 #tabs .tabs-nav{
 	overflow: hidden;
 	padding: 35px 0;
+	margin-bottom: 35px;
 }
-#tabs div{
-	margin-top: 35px;
+#tabs p.col-text{
+	line-height: 1.73333;
 }
 #tabs .tabs-nav li{
 	float: left;
@@ -450,6 +481,17 @@ h6.first-screen{
 #tabs div{
 	transition: display .2s linear;
 }
+@media(max-width: 991px){
+	#tabs .tabs-nav{
+		margin-bottom: 10px;
+	}
+	#tabs .tabs-nav li span{
+		font-size: 13px;
+	}
+	#tabs .tabs-nav li span + span{
+		margin-top: 15px;
+	}	
+}
 /* ----- Services end ----- */
 
 /* ----- Lets talk ----- */
@@ -462,6 +504,12 @@ h6.first-screen{
 }
 .lets-talk .lets-talk-img{
 	margin-top: -32px;
+}
+@media(max-width: 991px){
+	.lets-talk-content{
+		text-align: center;
+		padding: 70px 0;
+	}
 }
 /* ----- Lets talk end ----- */
 
@@ -522,6 +570,11 @@ h6.first-screen{
 #tabs-portfolio .tab-content-full-width .portfolio-item img{
 	width: 100%;
 }
+@media(max-width: 991px){
+	#tabs-portfolio .tab-content-full-width .portfolio-item{
+		width: 50%;
+	}
+}
 /* ----- Portfolio end ----- */
 /* ----- like-our-works ----- */
 /* ----- like-our-works end ----- */
@@ -555,6 +608,14 @@ h6.first-screen{
 .advantage-item .advantage-description{
 	line-height: 1.85714;
 	font-size: 14px;
+}
+@media(max-width: 991px){
+	.advantages-wrapper{
+		text-align: center;
+	}
+	.advantages-wrapper .advantage-item + .advantage-item{
+		margin-bottom: 20px;
+	}
 }
 /* ----- Why choose us end ----- */
 /* ----- REVIEW CAROUSEL START ----- */
@@ -695,6 +756,23 @@ h6.first-screen{
 	line-height: 1.733;
 	margin: 27px 0; 
 }
+@media(max-width: 991px){
+	.latest-news-item .latest-news-img img{
+		width: 100%;
+	}
+	.latest-news-wrapper .col + .col{
+		margin-top: 30px;
+	}
+	.latest-news-wrapper .col + .col:before{
+		display: inline-block;
+		content: '';
+		position: absolute;
+		width: 100%;
+		border-top: 2px solid rgba(0,0,0,.1);
+		top: -15px;
+		left: 0;
+	}
+}
 /* ----- Latest news end ----- */
 /* ----- SUBSCRIBE ----- */
 .subscribe form .form-control{
@@ -714,7 +792,7 @@ h6.first-screen{
 .contact-item .contact-item-content{
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 15px;
+	margin-left: 10px;
 }
 .contact-item .contact-item-content span{
 	display: block;
@@ -729,7 +807,6 @@ h6.first-screen{
 .contact-item .contact-item-content span.contact-data{
 	line-height: 1.6;
 	color: #444;
-	margin-top: 6px;
 }
 .contact-form .form-row{ 
 	margin: 0 -5px;
@@ -750,6 +827,14 @@ h6.first-screen{
 .contact-form .form-submit{
 	overflow: hidden;
 	margin-top: 20px;
+}
+@media(max-width:1200px){
+	.contact-items-wraqpper .contact-item .contact-item-content{
+		margin-left: 5px;
+	}
+	.contact-items-wraqpper .contact-item .contact-item-content .contact-data{
+		font-size: 14px;
+	}
 }
 /* ----- CONTACT END */
 /* ----- MAP START ----- */
@@ -850,4 +935,21 @@ h6.first-screen{
 
 /* ===== Custom styles end ===== */
 
+/* Media */
+/* devices <= 1200px */
+@media(max-width: 1200px){
+
+}
+/* devices <= 991px */
+@media(max-width: 991px){
+
+}
+/* devices <= 767px */
+@media(max-width: 767px){
+
+}
+/* devices <= 576px */
+@media(max-width: 576px){
+
+}
 
