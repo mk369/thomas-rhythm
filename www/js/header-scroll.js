@@ -7,34 +7,30 @@
 	
 	
 	function onScroll(e) {
-	    let pos = $(window).scrollTop();
-
-	    if (pos > headerHeight + 100) {
-	        header.css({
-	            'position': 'fixed',
-	            'top' : `-${headerHeight}px`,
-	            'background': '#000'
-			});
-		}
-		
+		let pos = $(window).scrollTop();
 	    if (pos > windowHeight) {
-	        header.css({
+	        header.addClass('shown-fixed').css({				
+				'position': 'fixed',
 	            'top' : '0',
 	            'transition' : 'top .3s ease-out'
 			});
-	    }
-
-	    if (pos < headerHeight + 100) {
+			return;
+	    };
+		if (pos > headerHeight * 2 + 50){
 	        header.css({
+	            'position': 'fixed',
+				'top' : `-${headerHeight}px`,				
+			});
+		} else {
+			header.removeClass('shown-fixed').css({
 	            'position': 'absolute',
-	            'top' : '0',
-	            'background': 'transparent',
-	            'transition' : 'none'
-			});			
-	    }
+				'top' : '0',
+				'transition': ""
+			});
+		}
 	}
-
-	$(window).on('scroll', onScroll);
+	
 	$(window).on('load', onScroll);
+	$(window).on('scroll', onScroll);
 
 })(jQuery);
