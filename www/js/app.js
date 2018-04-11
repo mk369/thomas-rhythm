@@ -55,17 +55,6 @@
     }
 // --- skillsHook
 
-// kick loader
-function kickLoader(){
-    if ($('.first-time-loader').length<1) return;
-    $('.first-time-loader .loader-icon').fadeOut(200,function(){
-        $('.first-time-loader').effect('blind',800,function(){
-            $('.first-time-loader').remove();
-        });
-    });
-}
-// --- kick loader
-
 // slickNav
     function initSlickNav(){
         const header = $('.header');
@@ -81,8 +70,7 @@ function kickLoader(){
             },
             afterClose: function(){
                 header.removeClass('slick-nav-opened');
-            },
-            init: kickLoader            
+            }          
         })));        
     }
 // --- slickNav
